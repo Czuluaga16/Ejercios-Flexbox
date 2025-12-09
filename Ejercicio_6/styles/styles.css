@@ -1,0 +1,146 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(135deg, #5bc0de 0%, #5bc0de 100%);
+}
+
+/* Contenedor de pricing */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+/* Tarjetas de pricing */
+.pricing-card {
+    width: 280px;
+    min-height: 480px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Header de la tarjeta */
+.pricing-header {
+    background-color: #ff6b6b;
+    padding: 20px;
+    text-align: center;
+}
+
+.pricing-header h3 {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Cuerpo de la tarjeta */
+.pricing-body {
+    flex: 1;
+    padding: 25px 20px;
+    background-color: #f9f9f9;
+}
+
+.pricing-body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pricing-body li {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Footer de la tarjeta */
+.pricing-footer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+}
+
+.pricing-footer button {
+    background-color: #f9f9f9;
+    color: #333;
+    border: 2px solid #ddd;
+    padding: 10px 30px;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-footer button:hover {
+    background-color: #ff6b6b;
+    color: white;
+    border-color: #ff6b6b;
+}
+
+/* Responsive - Tablets */
+@media (max-width: 768px) {
+    .pricing-container {
+        gap: 15px;
+    }
+    
+    .pricing-card {
+        width: 250px;
+        min-height: 450px;
+    }
+}
+
+/* Responsive - Móviles */
+@media (max-width: 480px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing-card {
+        width: 100%;
+        max-width: 350px;
+        min-height: auto;
+    }
+    
+    .pricing-header h3 {
+        font-size: 1.1em;
+    }
+    
+    .pricing-body li {
+        font-size: 0.9em;
+    }
+}
