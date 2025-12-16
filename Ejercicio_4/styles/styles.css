@@ -1,4 +1,4 @@
-/* Base */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
     padding: 20px;
 }
 
-/* Contenedor */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -24,7 +24,7 @@ h1 {
     font-size: 2em;
 }
 
-/* Galería */
+
 .Galeria {
     display: flex;
     flex-wrap: wrap;
@@ -57,20 +57,4 @@ h1 {
     display: block;
 }
 
-/* Responsive: 2 columnas en tablets */
-@media (max-width: 768px) {
-    .gallery-item {
-        flex: 0 1 calc(50% - 10px);
-    }
-}
 
-/* Responsive: 1 columna en móviles */
-@media (max-width: 480px) {
-    .gallery-item {
-        flex: 0 1 100%;
-    }
-    
-    h1 {
-        font-size: 1.5em;
-    }
-}

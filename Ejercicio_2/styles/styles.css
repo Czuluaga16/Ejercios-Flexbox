@@ -1,4 +1,4 @@
-/* Base */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +11,13 @@ body {
     padding: 100px;
 }
 
-/* Contenedor */
+
 .container {
     max-width: 800px;
     margin: 0px auto;
 }
 
-/* Menú Vertical */
+
 .menu-vertical {
     background-color: white;
 }
@@ -65,16 +65,3 @@ body {
     background-color: #7a7a7a;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-    .nav-item {
-        flex-direction: column;
-        gap: 12px;
-        
-    }
-    
-    .nav-button {
-        width: 200%;
-        text-align: center;
-    }
-}

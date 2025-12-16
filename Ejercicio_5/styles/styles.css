@@ -1,4 +1,4 @@
-/* Base */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@ body {
     flex-direction: column;
 }
 
-/* Header */
+
 header {
     background-color: #e0e0e0;
     padding: 20px;
@@ -30,14 +30,14 @@ header h1 {
     color: #333;
 }
 
-/* Main - Layout de 3 columnas */
+
 main {
     display: flex;
     flex: 1;
     overflow: hidden;
 }
 
-/* Navegación - Columna izquierda (25% del ancho) */
+
 .navigation {
     width: 25%;
     background-color: #d0d0d0;
@@ -75,7 +75,7 @@ main {
     color: #000;
 }
 
-/* Contenido principal - Columna central (50% del ancho) */
+
 .content {
     flex: 1;
     background-color: #c8c8c8;
@@ -96,7 +96,7 @@ main {
     text-align: justify;
 }
 
-/* Sidebar - Columna derecha (25% del ancho) */
+
 .sidebar {
     width: 25%;
     background-color: #d0d0d0;
@@ -117,7 +117,7 @@ main {
     font-size: 0.95em;
 }
 
-/* Footer */
+
 footer {
     background-color: #e0e0e0;
     padding: 20px;
@@ -130,39 +130,3 @@ footer p {
     font-weight: 500;
 }
 
-/* Responsive - Tablets */
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
-    
-    .navigation,
-    .content,
-    .sidebar {
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid #bbb;
-    }
-    
-    .sidebar {
-        border-bottom: none;
-    }
-}
-
-/* Responsive - Móviles */
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.3em;
-    }
-    
-    .navigation h3,
-    .content h2,
-    .sidebar h3 {
-        font-size: 1em;
-    }
-    
-    .content p,
-    .sidebar p {
-        font-size: 0.85em;
-    }
-}
